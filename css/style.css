@@ -1,0 +1,86 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: slategrey;
+  font-family:sans-serif;
+  font-size: 10px;
+  font-family: 'SF Pro Text', sans-serif;
+}
+.imagebox {
+  padding-top: 50px;
+  width: 100%;
+  background-color: black;
+}
+.divider {
+  height: 7px;
+  background-color: #FFCD00;
+}
+section {
+  background-color: #B0B0B3; /* bus lineup background */
+}
+li {
+  display: block;
+  border-top: solid 1px #BDBDBD; /* line between buses */
+  height: 40px;
+}
+.toosoon { color: #D83434; font-weight: 600; }
+.busline {
+  padding-left: 12px;
+  width:90%;
+  float: left;
+  display: inline-block;
+  font-size:17px;
+  /*font-weight: 600;*/
+  line-height: 40px;
+  font-family: "SF Pro Text";
+  font-style: normal;
+  color: white;
+}
+.arrow {
+ padding-top: 10px;
+ padding-right: 15px;
+ height: 20px;
+ float: right;
+ display: inline-block;
+ color: #FFCD00;
+}
+.container {
+  margin: 0 auto;
+  width: 420px;
+  background-color: #FFCD00;
+
+}
+.statusbar{
+  padding-left: 12px;
+}
+.back{
+  padding-left: 12px;
+  font-family: SF Pro Text;
+  font-weight: 600;
+  font-size: 17px;
+  color: #FFFFFF;
+}
+.title{
+  font-family: SF Pro Text;
+  font-weight: 600;
+  font-size: 17px;
+  color: #FFFFFF;
+  position: absolute;
+  width: 173px;
+  height: 22px;
+  left: calc(50% - 173px/2);
+}
+nav {
+  margin: 0 auto;
+  padding: 15px 15px 15px 15px;
+  position: fixed;
+  width:420px;
+  border: 5px solid #FFCD00;
+  float: left;
+  background-color: #FFCD00;
+}
+div {
+  width: 100%;
+}
