@@ -23,10 +23,22 @@ section {
 li {
   display: block;
   border-top: solid 1px #BDBDBD; /* line between buses */
-  height: 40px;
+  height: 50px;
 }
-.toosoon { color: #D83434; font-weight: 600; }
-.direction { color: #FFCD00; font-weight: 600; }
+.numberCircle {
+    border-radius: 50%;
+    padding: 7px;
+    position: relative;
+    top: 8px;
+    right:2px;
+    background: #fff;
+    border: 2px solid #FFCD00;
+    color: #666;
+    font-family: "SF Pro Text";
+    font-size: 14px;
+    font-weight: bold;
+}
+.arriving { color: #ED0404; font-weight: 600; }
 .busline {
   padding-left: 12px;
   width:90%;
@@ -34,10 +46,24 @@ li {
   display: inline-block;
   font-size:17px;
   /*font-weight: 600;*/
-  line-height: 40px;
+  line-height: 35px;
   font-family: "SF Pro Text";
   font-style: normal;
   color: white;
+}
+.service {
+  position: relative;
+}
+.service::after {
+  content: attr(title);
+  position: absolute;
+  top: 1em;
+  padding-left: 6px;
+  left: 0;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  font-family: "SF Pro Text";
+  color: black;
 }
 .arrow {
  padding-top: 10px;
@@ -49,12 +75,11 @@ li {
 }
 .container {
   margin: 0 auto;
-  width: 390px;
-  background-color: #FFCD00;
+  width: 380px;
+  background-color: #0B0B0B;
 }
-
 .back{
-  padding-left: 12px;
+  padding-left: 5px;
   font-family: SF Pro Text;
   font-weight: 600;
   font-size: 17px;
@@ -74,10 +99,10 @@ nav {
   margin: 0 auto;
   padding: 15px 15px 15px 15px;
   position: fixed;
-  width:390px;
-  border: 5px solid #FFCD00;
+  width:380px;
+  border: 5px solid #0B0B0B;
   float: left;
-  background-color: #FFCD00;
+  background-color: #0B0B0B;
 }
 div {
   width: 100%;
